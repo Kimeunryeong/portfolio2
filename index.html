@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>WCB Conference</title>
+    <meta name="description" content="웹사이트 제작 설명회 온라인 개최" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <div class="wrapper">
+        <a class="logo" href="#main_title">portfolio</a>
+        <nav>
+          <button class="btn-menu">Menu</button>
+          <ul class="main-nav">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="main_title">
+      <div class="wrapper">
+        <h1>" Hi, "</h1>
+        <p class="main_title-date">김은령 포트폴리오</p>
+        <p>김은령 포트폴리오</p>
+      </div>
+    </section>
+
+    <!-- 어바웃 미 -->
+    <section id="about" class="wrapper">
+      <h2>About Me</h2>
+      <div class="about_con">
+        <div>
+          <img src="images/about_img.png" alt="intro_img" />
+        </div>
+        <div class="about_text">
+          <p>김은령</p>
+          <p>경력</p>
+          <p>텍스트</p>
+          <p>텍스트</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="wrapper">
+        <div class="skills_con">
+          <div>
+            <img src="images/logohtml.png" alt="html logo" />
+            <img src="images/logocss.png" alt="css logo" />
+            <img src="images/logojs.png" alt="js logo" />
+            <img src="images/logoreact.png" alt="react logo" />
+            <img src="images/logojqu.png" alt="jquery logo" />
+            <img src="images/logoboot.png" alt="bootstrap logo" />
+            <img src="images/logoxd.png" alt="xd logo" />
+            <img src="images/logofigma.png" alt="figma logo" />
+
+          </div>
+        </div>
+        <!-- <table class="skills-table">
+          <tr>
+            <td class="skills-date">이미지</td>
+            <td class="skills-content">텍스트</td>
+          </tr>
+          <tr>
+            <td class="skills-date">이미지</td>
+            <td class="skills-content">텍스트</td>
+          </tr>
+          <tr>
+            <td class="skills-date">이미지</td>
+            <td class="skills-content">텍스트</td>
+          </tr>
+          <tr>
+            <td class="skills-date">이미지</td>
+            <td class="skills-content">텍스트ce 개최 결정!</td>
+          </tr>
+        </table> -->
+      </div>
+    </section>
+
+    <section id="project" class="wrapper">
+      <h2>Project</h2>
+      <div class="project-list">
+        <img src="images/mana.jpg" alt="Mana" />
+        <div class="project-text">
+          <h3>CHANEL</h3>
+          <p>설명</p>
+        </div>
+      </div>
+      <div class="project-list">
+        <img src="images/tatsuya.jpg" alt="Tatsuya" />
+        <div class="project-text">
+          <h3>OSULLOC</h3>
+          <p>설명</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form class="contact-form" action="#">
+        <label>Name</label>
+        <input class="contact-field" type="text" placeholder="이름" />
+        <label>Email</label>
+        <input
+          class="contact-field"
+          type="email"
+          placeholder="hello@example.com"
+        />
+        <input class="contact-btn" type="submit" value="SEND" />
+      </form>
+
+      <div class="footer wrapper">
+        <p>
+          <a href="mailto:info@example.om"></a> /
+          <small>&copy; 2021 WCB Conference</small>
+        </p>
+      </div>
+    </section>
+
+    <!-- 자바스크립트 제이쿼리 플러그인 삽입 -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <!-- 스크롤 기능을 위한 자바스크립트 플러그인 삽입 -->
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <!-- 스크롤 기능을 위한 자바스크립트 플러그인 실행 -->
+    <script>
+      $(function () {
+        $("section").click(function (e) {
+          $.scrollTo(this.hash || 0, 500);
+          e.preventDefault();
+        });
+      });
+    </script>
+    <!-- 휠 이벤트로 섹션 하나씩 이동하는 자바스크립트 제이쿼리 실행 -->
+    <script src="js/wheel.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
