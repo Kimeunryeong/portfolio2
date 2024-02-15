@@ -4,18 +4,9 @@
 COLORS
 ================================================ */
 :root {
-  --light-blue: #4db1ec;
-  --originblue: #5E62D1;
-  --blue: #1665cc;
-  --purple: #b473bf;
-  --pink: #ffb2c1;
-  --orange: #ff9f67;
-  --yellow: #ffd673;
-  --light-green: #a2e29b;
-  --green: #00a2af;
+  --originblue: #5e62d1;
   --grey: #333;
   --white: #fff;
-  --plum: #800080;
 }
 
 /*
@@ -58,7 +49,7 @@ h2,
 
 /* Layout */
 .wrapper {
-  max-width: 900px;
+  max-width: 950px;
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
@@ -68,7 +59,7 @@ h2,
 HEADER
 ================================================ */
 header {
-  background: var(--blue);
+  background: whitesmoke;
   padding: 1rem 0;
   position: fixed;
   width: 100%;
@@ -79,15 +70,13 @@ header .wrapper {
   justify-content: space-between;
 }
 header a {
-  color: var(--white);
   font-size: 1.5rem;
 }
 .btn-menu {
   position: absolute;
   top: 12px;
   right: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  color: var(--white);
+  border: 1px solid lightgray;
   padding: 0.5rem 1rem;
 }
 .main-nav {
@@ -114,53 +103,29 @@ header a {
 main_title
 ================================================ */
 #main_title {
-  /* ↓ 생략형이면 브라우저에 따라 제대로 동작하지 않을 수 있음
-    background: var(--light-blue) url('../images/main_title.jpg') no-repeat center / cover; */
-  background-color: var(--light-blue);
-  animation: bg-color 24s infinite;
-  height: 100vh;
   display: flex;
   align-items: center;
+  background-color: white;
+  background-image: url("/images/mainimg2.jpg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 100vh;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
-@keyframes bg-color {
-  0% {
-    background-color: var(--light-blue);
-  }
-  12.5% {
-    background-color: var(--blue);
-  }
-  25% {
-    background-color: var(--purple);
-  }
-  37.5% {
-    background-color: var(--pink);
-  }
-  50% {
-    background-color: var(--orange);
-  }
-  62.5% {
-    background-color: var(--yellow);
-  }
-  75% {
-    background-color: var(--light-green);
-  }
-  87.5% {
-    background-color: var(--green);
-  }
-  100% {
-    background-color: var(--light-blue);
-  }
+.title {
+  display: table;
 }
+
 #main_title h1 {
   font-size: 3.5rem;
   margin-bottom: 1.5rem;
 }
 .main_title-date {
   text-align: center;
-  border-top: 3px solid var(--grey);
-  border-bottom: 3px solid var(--grey);
+  border-top: 3px solid lightgray;
+  border-bottom: 3px solid lightgray;
   padding: 0.5rem 0;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
@@ -174,11 +139,6 @@ ABOUT
   height: 94vh;
 }
 #about h2 {
-  background: linear-gradient(var(--pink), var(--blue));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
   margin-top: 2rem;
   margin-bottom: 5rem;
 }
@@ -190,30 +150,50 @@ ABOUT
 .about_con {
   display: flex;
   align-items: center;
-  
 }
 .about_con div img {
-    width: 90%;
+  width: 85%;
 }
 
 /*
 skills
 ================================================ */
 #skills {
-  background-image: linear-gradient(var(--purple), var(--light-blue));
+  background-color: whitesmoke;
   padding: 7rem 0;
   -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
   clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
 }
-#skills h2 {
-  color: var(--white);
+.skills_list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  width: 100%;
 }
-.skills-date {
-  font-size: 0.875rem;
-  padding-top: 1rem;
+
+.skills_con {
+  position: relative;
+  display: inline-block;
 }
-.skills-content {
-  padding-bottom: 1rem;
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(245, 245, 245, 0.8);
+  color: var(--grey);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.skills_con:hover .overlay {
+  display: flex;
+  box-shadow: 1px 10px 15px rgba(150, 150, 150, 0.5);
+  border-radius: 10px
 }
 
 /*
@@ -224,47 +204,48 @@ project
 }
 .project-list {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
 }
-.project-text {
-  margin-left: 1rem;
-}
-#project h2 {
-  background: linear-gradient(var(--light-blue), var(--blue));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-}
-#project h3 {
+
+.project-text h3 {
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.project-text p {
+  margin-bottom: 4rem;
 }
 #project img {
-  border-radius: 50%;
-  width: 20%;
+  width: 50%;
+}
+.project-text a {
+  background: lightgray;
+  font-size: 0.9rem;
+  font-weight: normal;
+  padding: 0.5rem;
+  border-radius: 10%;
+}
+.project-text a:hover {
+  background: var(--grey);
+  color: whitesmoke;
 }
 
 /*
 contact
 ================================================ */
 #contact {
-  background-image: linear-gradient(var(--pink), var(--blue));
+  background: whitesmoke;
   padding: 6rem 1rem 2rem;
   -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
 }
-#contact h2 {
-  color: var(--white);
-}
+
 .contact-form {
   max-width: 480px;
   margin: 0 auto 5rem;
 }
 .contact-form label {
-  color: var(--white);
   display: block;
   margin-bottom: 0.5rem;
 }
@@ -275,7 +256,7 @@ contact
   margin-bottom: 1.5rem;
 }
 .contact-btn {
-  background: var(--grey);
+  background: lightgray;
   color: var(--white);
   display: block;
   width: 100%;
@@ -291,7 +272,6 @@ FOOTER
   padding-top: 2rem;
   text-align: center;
   font-size: 0.875rem;
-  color: var(--white);
 }
 .footer a {
   text-decoration: underline;
@@ -310,10 +290,11 @@ DESKTOP SIZE
     transition: 0.3s;
   }
   a:hover {
-    color: var(--blue);
+    color: black;
   }
   .contact-btn:hover {
-    background: var(--blue);
+    background: var(--grey);
+    color: whitesmoke;
   }
 
   /* Header */
@@ -335,14 +316,7 @@ DESKTOP SIZE
   .main_title-date {
     font-size: 3rem;
   }
-  /* skills */
 
-  .skills-date {
-    padding: 1.125rem 0 1rem 1rem;
-  }
-  .skills-content {
-    padding: 1rem 1rem 1rem 0;
-  }
   /* project */
   #project h2 {
     margin-bottom: 4rem;

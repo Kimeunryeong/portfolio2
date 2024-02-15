@@ -16,6 +16,7 @@
   </head>
 
   <body>
+    <!-- 헤더 -->
     <header>
       <div class="wrapper">
         <a class="logo" href="#main_title">portfolio</a>
@@ -31,15 +32,18 @@
       </div>
     </header>
 
+    <!-- 메인 타이틀 섹션 -->
     <section id="main_title">
       <div class="wrapper">
-        <h1>" Hi, "</h1>
-        <p class="main_title-date">김은령 포트폴리오</p>
-        <p>김은령 포트폴리오</p>
+        <div class="title">
+          <h1>" Hi, "</h1>
+          <p class="main_title-date">김은령 포트폴리오</p>
+          <p>김은령 포트폴리오</p>
+        </div>
       </div>
     </section>
 
-    <!-- 어바웃 미 -->
+    <!-- 어바웃 미 섹션 -->
     <section id="about" class="wrapper">
       <h2>About Me</h2>
       <div class="about_con">
@@ -55,57 +59,80 @@
       </div>
     </section>
 
+    <!-- 스킬 섹션 -->
     <section id="skills">
       <h2>Skills</h2>
       <div class="wrapper">
-        <div class="skills_con">
-          <div>
+        <div class="skills_list">
+          <div class="skills_con">
+            <div class="overlay">
+              <p>얕은 나의 지식</p>
+            </div>
             <img src="images/logohtml.png" alt="html logo" />
-            <img src="images/logocss.png" alt="css logo" />
-            <img src="images/logojs.png" alt="js logo" />
-            <img src="images/logoreact.png" alt="react logo" />
-            <img src="images/logojqu.png" alt="jquery logo" />
-            <img src="images/logoboot.png" alt="bootstrap logo" />
-            <img src="images/logoxd.png" alt="xd logo" />
-            <img src="images/logofigma.png" alt="figma logo" />
-
           </div>
+          <div class="skills_con">
+            <div class="overlay">
+              <p>얕은 나의 지식</p>
+            </div>
+            <img src="images/logocss.png" alt="css logo" />
+          </div>
+          <div class="skills_con">
+            <div class="overlay">
+              <p>얕은 나의 지식</p>
+            </div>
+            <img src="images/logojs.png" alt="js logo" />
+          </div>
+          <div class="skills_con">
+            <div class="overlay">
+              <p>얕은 나의 지식</p>
+            </div>
+            <img src="images/logoreact.png" alt="react logo" />
+          </div>
+          <div class="skills_con">
+            <div class="overlay">
+              <p>얕은 나의 지식</p>
+            </div>
+            <img src="images/logoboot.png" alt="bootstrap logo" />
+          </div>
+          <div class="skills_con">
+            <div class="overlay">
+              <p>얕은 나의 지식</p>
+            </div>
+            <img src="images/logofigma.png" alt="figma logo" />
+          </div>
+
+          
+          <img src="images/logoxd.png" alt="xd logo" />
+          <img src="images/logojqu.png" alt="jquery logo" />
         </div>
-        <!-- <table class="skills-table">
-          <tr>
-            <td class="skills-date">이미지</td>
-            <td class="skills-content">텍스트</td>
-          </tr>
-          <tr>
-            <td class="skills-date">이미지</td>
-            <td class="skills-content">텍스트</td>
-          </tr>
-          <tr>
-            <td class="skills-date">이미지</td>
-            <td class="skills-content">텍스트</td>
-          </tr>
-          <tr>
-            <td class="skills-date">이미지</td>
-            <td class="skills-content">텍스트ce 개최 결정!</td>
-          </tr>
-        </table> -->
       </div>
     </section>
 
+    <!-- 프로젝트 섹션 -->
     <section id="project" class="wrapper">
       <h2>Project</h2>
       <div class="project-list">
-        <img src="images/mana.jpg" alt="Mana" />
+        <img src="/images/pofol_chanel.png" alt="chanel" />
         <div class="project-text">
-          <h3>CHANEL</h3>
+          <h3>Chanel</h3>
           <p>설명</p>
+          <a href="#">CHANEL</a>
         </div>
       </div>
       <div class="project-list">
-        <img src="images/tatsuya.jpg" alt="Tatsuya" />
+        <img src="/images/pofol_osulloc.png" alt="osulloc" />
         <div class="project-text">
-          <h3>OSULLOC</h3>
+          <h3>오설록</h3>
           <p>설명</p>
+          <a href="#">오설록</a>
+        </div>
+      </div>
+      <div class="project-list">
+        <img src="/images/pofol_marvel.png" alt="marvel" />
+        <div class="project-text">
+          <h3>Marvel</h3>
+          <p>설명</p>
+          <a href="#">Marvel</a>
         </div>
       </div>
     </section>
@@ -137,14 +164,7 @@
     <!-- 스크롤 기능을 위한 자바스크립트 플러그인 삽입 -->
     <script src="js/jquery.scrollTo.min.js"></script>
     <!-- 스크롤 기능을 위한 자바스크립트 플러그인 실행 -->
-    <script>
-      $(function () {
-        $("section").click(function (e) {
-          $.scrollTo(this.hash || 0, 500);
-          e.preventDefault();
-        });
-      });
-    </script>
+
     <!-- 휠 이벤트로 섹션 하나씩 이동하는 자바스크립트 제이쿼리 실행 -->
     <script src="js/wheel.js"></script>
 
