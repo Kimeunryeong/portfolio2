@@ -20,7 +20,7 @@ html {
 body {
   color: var(--grey);
   font-family: sans-serif;
-  background: url("/images/pattern.png");
+  background: url("../images/pattern.png");
 }
 
 /*
@@ -106,7 +106,7 @@ main_title
   display: flex;
   align-items: center;
   background-color: white;
-  background-image: url("/images/mainimg2.jpg");
+  background-image: url("../images/mainimg2.jpg");
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: right bottom;
