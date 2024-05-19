@@ -21,6 +21,10 @@
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bg.css" />
+    <!-- AOS라이브러리 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
   <body>
@@ -39,7 +43,15 @@
         </nav>
       </div>
     </header>
-
+    <!-- 배경 -->
+    <div class="bg">
+      <div class="cover">
+        <p class="first-parallel"></p>
+      </div>
+      <div class="cover">
+        <p class="second-parallel"></p>
+      </div>
+    </div>
     <!-- 메인 -->
     <section id="main">
       <div class="wrap">
@@ -58,10 +70,7 @@
         </div>
         <div class="about-text">
           <p>안녕하세요! 김은령입니다.</p>
-          <p>
-            즐기는 마음으로 UI/UX 디자인과 퍼블리싱을 하고
-            있습니다.
-          </p>
+          <p>즐기는 마음으로 UI/UX 디자인과 퍼블리싱을 하고 있습니다.</p>
           <p>
             어디에서도 잘 보이는 반응형, 웹 접근성과 웹 표준을 고려한 웹
             페이지를 그려냅니다.
@@ -99,34 +108,69 @@
     <!-- 프로젝트 -->
     <section id="project" class="wrapper">
       <h2>Project</h2>
-      <div class="project-list">
+      <div
+        class="project-list"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
         <img src="images/pofol_chanel.png" alt="chanel" />
         <div class="project-text">
           <a href="#">CHANEL</a>
-
-          <p>설명</p>
+          <p>첫 개인 프로젝트</p>
+          <p>
+            가브리엘라 샤넬의 대한 내용을 담아<br />샤넬이 주는 분위기에 맞춰
+            디자인한 원페이지 사이트입니다.
+          </p>
+          <p>23 . 12 2주 소요</p>
         </div>
       </div>
-      <div class="project-list">
+      <div
+        class="project-list"
+        data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
         <div class="project-text">
           <a href="#">오설록</a>
-          <p>설명</p>
+          <p>두번째 개인 프로젝트</p>
+          <p>
+            제주의 느낌을 살려 만든 오설록 티 하우스 사이트로<br />
+            기존 사이트에서 보기 힘든 디저트와 음료를 알리는 내용을 추가로
+            넣어<br />디자인하고 제작한 원페이지 사이트입니다.
+          </p>
+          <p>24 . 01 2주 소요</p>
         </div>
         <img src="images/pofol_osulloc.png" alt="osulloc" />
       </div>
-      <div class="project-list">
+      <div
+        class="project-list"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
         <img src="images/pofol_marvel.png" alt="marvel" />
         <div class="project-text">
           <a href="#">Marvel</a>
-
-          <p>설명</p>
+          <p>세번째 개인 프로젝트</p>
+          <p>리액트로 마블 사이트를 클론코딩한 프로젝트입니다.</p>
         </div>
       </div>
-      <div class="project-list">
+      <div
+        class="project-list"
+        data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
         <div class="project-text">
           <a href="https://market-roan-rho.vercel.app/">StreetMarket</a>
 
-          <p>설명</p>
+          <p>두번째 팀 프로젝트</p>
+          <p>
+            UI/UX를 맡아 플리마켓이라는 주제와 랜딩페이지에 맞춰 구상하였으며<br />
+            그에 맞는 캐릭터를 직접 디자인하여 디자인한 사이트입니다.
+          </p>
+          <p>24. 03 ~ 24. 04 한 달 소요</p>
         </div>
         <img
           src="images/streetmarket.png"
@@ -155,14 +199,12 @@
         </p>
       </div>
     </section>
-
-    <!-- 자바스크립트 제이쿼리 플러그인 삽입 -->
-    <script src="js/jquery-2.2.4.min.js"></script>
-    <!-- 스크롤 기능을 위한 자바스크립트 플러그인 삽입 -->
-    <script src="js/jquery.scrollTo.min.js"></script>
-    <!-- 스크롤 기능을 위한 자바스크립트 플러그인 실행 -->
-
+    <!-- AOS초기화 -->
+    <script>
+      AOS.init();
+    </script>
     <!-- JavaScript -->
     <script src="js/script.js"></script>
+    <script src="js/background.js"></script>
   </body>
 </html>
