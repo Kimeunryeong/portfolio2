@@ -19,6 +19,10 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+html, body {
+  overflow-x: hidden;
+  word-break: keep-all;
+}
 html {
   font-size: 100%;
   /* 스무스 스크롤 */
@@ -29,7 +33,6 @@ body {
 	line-height: 1.5;
   font-family:Montserrat,Pretendard,-apple-system,Apple SD Gothic Neo,맑은 고딕,Malgun Gothic,sans-serif;
   letter-spacing: -.02em;
-  overflow-x: hidden;
 }
 h2 {
   margin: 3rem 2rem;
