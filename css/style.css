@@ -40,7 +40,7 @@ header .wrapper {
   display: block;
 }
 .main-nav.open-menu {
-  width: 15%; 
+  width: 15%;
 }
 
 /* 메인 타이틀================================================ */
@@ -79,9 +79,6 @@ header .wrapper {
   font-weight: 700;
   margin-bottom: 10px;
 }
-.sm-text {
-  font-size: 1.5rem;
-}
 
 /* ABOUT ================================================ */
 #about {
@@ -98,9 +95,7 @@ header .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.about-con img {
-  width: 85%;
+  gap: 20px;
 }
 
 /*
@@ -118,7 +113,6 @@ skills
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
   width: 100%;
- 
 }
 
 /*
@@ -135,10 +129,10 @@ project
   margin-bottom: 300px;
 }
 .project-text {
-  width: 60%;
+  width: 50%;
 }
 #project img {
-  width: 40%;
+  width: 50%;
 }
 .project-text a {
   position: relative;
@@ -216,4 +210,3 @@ FOOTER
 .footer a {
   text-decoration: underline;
 }
-

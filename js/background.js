@@ -2,7 +2,7 @@ const pTag1 = document.querySelector(".first-parallel");
 const pTag2 = document.querySelector(".second-parallel");
 
 const textArr1 = "LEARN TO HTML/CSS/JavaScript".split(" ");
-const textArr2 = "EUNRYEONG".split(" ");
+const textArr2 = "Eunryeong's Web Portfolio".split(" ");
 
 function initTexts(element, textArray) {
   const quadrupledTextArray = textArray.concat(textArray, textArray, textArray); // textArray를 네 번 반복하여 확장
