@@ -2,10 +2,38 @@
 DESKTOP SIZE
 ================================================ */
 @media (min-width: 375px) and (max-width: 768px) {
-    #main h1 {
+  .btn-menu {
+    display: block;
+  }
+
+  .main-nav li {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  #main h1 {
     font-size: 3.5rem;
   }
-  
+
+  .main-nav {
+    width: 0;
+    position: absolute;
+    z-index: 2;
+    right: -100px;
+    overflow: hidden;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+  }
+  .main-nav.open-menu {
+    width: 100%;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    
+    font-weight: 600;
+  }
+
   /* 배경 */
   .lg-text {
     font-size: 1.4rem;
@@ -39,17 +67,16 @@ DESKTOP SIZE
   .project-list.reversed {
     flex-direction: column-reverse;
   }
-.project-text {
-  word-break: keep-all;
-}
-h2 {
-  font-size: 4.5rem;
-  font-weight: 700;
-  margin-bottom: 4rem;
-}
-#project img {
-  width: 100%;
-  margin-bottom: 2rem;
-}
-
+  .project-text {
+    word-break: keep-all;
+  }
+  h2 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+  }
+  #project img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }
