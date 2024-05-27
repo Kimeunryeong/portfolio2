@@ -158,6 +158,18 @@ project
 .project-text a:hover::after {
   transform: scaleX(1);
 }
+.project-list-skills{
+  display: flex;
+  justify-content: center;
+}
+.project-list-skills p {
+  padding: 8px;
+  font-size: 14px;
+  background: black;
+  color: white;
+  margin: 5px;
+  border-radius: 15px;
+}
 
 /*
 contact
