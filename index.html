@@ -14,13 +14,12 @@
       rel="stylesheet"
     />
     <!-- 부트스트랩 -->
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    /> -->
 
     <!-- CSS -->
     <link
@@ -241,66 +240,35 @@
         id="gform"
         method="POST"
         data-email="example@email.net"
-        action="https://script.google.com/macros/s/AKfycbxMxANPIAa31N0-y1tO_hdloSwCDZQiYoqpoveknwj8GG50bhE8MUU2DTFyQXdFSLvk/exec"
+        action="https://script.google.com/macros/s/AKfycbydD_CyY0l5oH6bWAGb2xGVsrEF25ml3zOeMhYzoAzSybigkFVW-NigM6oJ4kqDcJ-dmA/exec"
       >
-        <label class="form_title">Name</label>
+        <label>Name</label>
         <input
+          name="name"
           class="contact-field"
           type="text"
           placeholder="이름"
-          name="name"
         />
-        <label class="form_title">Email</label>
+        <label>Email</label>
         <input
-          class="contact-field"
-          type="email"
-          placeholder="hello@example.com"
           name="email"
+          class="contact-field"
+          type="text"
+          placeholder="이메일"
         />
-        <textarea name="message" placeholder="내용을 작성해주세요!"></textarea>
-        <button
-          type="button"
-          class="btn btn-primary"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
-          전송하기
-        </button>
-
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">
-                  전송되었습니다!
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">...</div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary">닫기</button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <label>Message</label>
+        <textarea
+          name="message"
+          class="contact-field1"
+          placeholder="내용"
+        ></textarea>
+        <input class="contact-btn" type="submit" value="Send" />
       </form>
 
       <div class="footer wrapper">
         <p>
-          <a href="mailto:info@example.com"></a> /
-          <small>&copy; made by EunRyeong</small>
+          <a href="mailto:info@example.com"></a>
+          <small>2024&copy; made by EunRyeong</small>
         </p>
       </div>
     </section>

@@ -218,8 +218,34 @@ textarea {
   color: gray;
   padding: 0.6rem;
 }
+.btn-primary:hover {
+  background: black;
+  color: white;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+    color: #fff;
+    background-color: black; /* 클릭 후 색상을 원하는 색상으로 변경 */
+}
+.btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(169, 169, 169, 0.5); /* 포커스 시 회색(그레이) 쉐도우 추가 */
+}
+.btn-close {
+  background-color: white;;
+}
 .btn {
   transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.modal-content {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+.modal-content, .modal-header, .modal-footer {
+  border: none;
+
 }
 
 
