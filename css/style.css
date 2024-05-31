@@ -176,37 +176,52 @@ contact
 ================================================ */
 #contact {
   padding: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #contact h2 {
   text-align: center;
 }
 
-.contact-form {
+form {
   background-color: whitesmoke;
   padding: 2rem;
-  border-radius: 10px;
-
+  border-radius: 5px;
   max-width: 480px;
-  margin: 0 auto 5rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
 }
-.contact-form label {
-  display: block;
-  margin-bottom: 0.5rem;
-}
+
 .contact-field {
-  background: rgba(255, 255, 255, 0.6);
-  padding: 1rem;
+  background: white;
+  padding: 1rem 10rem 1rem 1rem;
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin: 1rem 0 1.5rem 0;
+  border-radius: 5px;
 }
-.contact-btn {
-  background: lightgray;
+textarea {
+  background: white;
+  width: 100%;
+  height: 200px;
+  padding: 1rem;
+  resize:none;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.btn-primary {
+  background: white;
+  border: none;
+  border-radius: 5px;
   color: gray;
-  display: block;
-  width: 100%;
-  padding: 1rem;
-  margin-top: 1rem;
+  padding: 0.6rem;
 }
+.btn {
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
 
 /*
 FOOTER

@@ -13,6 +13,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- 부트스트랩 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
     <!-- CSS -->
     <link
@@ -127,7 +135,6 @@
             <p>JavaScript</p>
           </div>
         </div>
-        
       </div>
       <div
         class="project-list reversed"
@@ -135,7 +142,6 @@
         data-aos-offset="300"
         data-aos-easing="ease-in-sine"
       >
-        
         <div class="project-text">
           <a href="https://osullocteahouse.netlify.app">오설록</a>
 
@@ -181,7 +187,6 @@
         data-aos-offset="300"
         data-aos-easing="ease-in-sine"
       >
-        
         <div class="project-text">
           <a href="http://dogether.dothome.co.kr/dogether_php_ver/index.php"
             >DOGETHER</a
@@ -232,17 +237,66 @@
 
     <section id="contact" class="wrapper">
       <h2>Contact</h2>
-      <form class="contact-form" action="#">
-        <label>Name</label>
-        <input class="contact-field" type="text" placeholder="이름" />
-        <label>Email</label>
+      <form
+        id="gform"
+        method="POST"
+        data-email="example@email.net"
+        action="https://script.google.com/macros/s/AKfycbxMxANPIAa31N0-y1tO_hdloSwCDZQiYoqpoveknwj8GG50bhE8MUU2DTFyQXdFSLvk/exec"
+      >
+        <label class="form_title">Name</label>
+        <input
+          class="contact-field"
+          type="text"
+          placeholder="이름"
+          name="name"
+        />
+        <label class="form_title">Email</label>
         <input
           class="contact-field"
           type="email"
           placeholder="hello@example.com"
+          name="email"
         />
-        <input class="contact-btn" type="submit" value="SEND" />
+        <textarea name="message" placeholder="내용을 작성해주세요!"></textarea>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          전송하기
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  전송되었습니다!
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">...</div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">닫기</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </form>
+
       <div class="footer wrapper">
         <p>
           <a href="mailto:info@example.com"></a> /
@@ -257,5 +311,10 @@
     <!-- JavaScript -->
     <script src="js/script.js"></script>
     <script src="js/background.js"></script>
+    <script
+      data-cfasync="false"
+      type="text/javascript"
+      src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"
+    ></script>
   </body>
 </html>
