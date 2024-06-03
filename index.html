@@ -239,8 +239,8 @@
       <form
         id="gform"
         method="POST"
-        data-email="example@email.net"
-        action="https://script.google.com/macros/s/AKfycbzJSs1Zi7EkgXSU0oyqlOPT-WTRWhHF_mQGKDIPDTrD-Dabaf2kJM1mxxk9swSp5q8vFA/exec"
+        action="https://script.google.com/macros/s/AKfycbxvwJUeBEt6fp8hvYGoeIZ7tN7SVq5M-EBd8tZWUgAaAybfaMeBq4_dNvYWIv6ZMJVflw/exec
+        "
       >
         <label>Name</label>
         <input
@@ -262,7 +262,7 @@
           class="contact-field1"
           placeholder="내용"
         ></textarea>
-        <input class="contact-btn" type="submit" value="Send" />
+        <input class="contact-btn" value="Send" />
         <div style="display: none" class="thankyou_message">
           <h2>
             <em>Thanks</em> for contacting us! We will get back to you soon!
@@ -272,7 +272,6 @@
 
       <div class="footer wrapper">
         <p>
-          <a href="mailto:info@example.com"></a>
           <small>2024&copy; made by EunRyeong</small>
         </p>
       </div>
@@ -282,12 +281,11 @@
       AOS.init();
     </script>
     <!-- JavaScript -->
-    <script src="js/script.js"></script>
-    <script src="js/background.js"></script>
     <script
       data-cfasync="false"
       type="text/javascript"
       src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"
     ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
