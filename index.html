@@ -240,7 +240,7 @@
         id="gform"
         method="POST"
         data-email="example@email.net"
-        action="https://script.google.com/macros/s/AKfycbydD_CyY0l5oH6bWAGb2xGVsrEF25ml3zOeMhYzoAzSybigkFVW-NigM6oJ4kqDcJ-dmA/exec"
+        action="https://script.google.com/macros/s/AKfycbzJSs1Zi7EkgXSU0oyqlOPT-WTRWhHF_mQGKDIPDTrD-Dabaf2kJM1mxxk9swSp5q8vFA/exec"
       >
         <label>Name</label>
         <input
@@ -253,7 +253,7 @@
         <input
           name="email"
           class="contact-field"
-          type="text"
+          type="email"
           placeholder="이메일"
         />
         <label>Message</label>
@@ -263,6 +263,11 @@
           placeholder="내용"
         ></textarea>
         <input class="contact-btn" type="submit" value="Send" />
+        <div style="display: none" class="thankyou_message">
+          <h2>
+            <em>Thanks</em> for contacting us! We will get back to you soon!
+          </h2>
+        </div>
       </form>
 
       <div class="footer wrapper">

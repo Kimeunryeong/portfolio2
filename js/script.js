@@ -51,25 +51,3 @@ function blink() {
   target.classList.toggle("active");
 }
 setInterval(blink, 500);
-
-// 기본 메일폼 제출 방지하기
-// document.addEventListener('DOMContentLoaded', function() {
-//   // 버튼 요소 가져오기
-//   var sendButton = document.querySelector('#btn-send');
-
-//   // 버튼에 클릭 이벤트 리스너 추가
-//   sendButton.addEventListener('click', sendBtn);
-// });
-
-// function sendBtn() {
-//   // 함수 내용
-//   var name = document.querySelector('[name="name"]').value;
-//   var email = document.querySelector('[name="email"]').value;
-//   var message = document.querySelector('[name="message"]').value;
-  
-//   console.log(name, email, message);
-//   if (name==='' || email==='' || message==='') {
-//    document.querySelector(".modal-body").innerHTML = "내용을 전부 입력해주세요!";
-  
-//   }
-// }
