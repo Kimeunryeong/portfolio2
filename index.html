@@ -237,36 +237,32 @@
     <section id="contact" class="wrapper">
       <h2>Contact</h2>
       <form
-        id="gform"
+        class="gform"
         method="POST"
         action="https://script.google.com/macros/s/AKfycbxvwJUeBEt6fp8hvYGoeIZ7tN7SVq5M-EBd8tZWUgAaAybfaMeBq4_dNvYWIv6ZMJVflw/exec
         "
       >
-        <label>Name</label>
-        <input
-          name="name"
-          class="contact-field"
-          type="text"
-          placeholder="이름"
-        />
-        <label>Email</label>
-        <input
-          name="email"
-          class="contact-field"
-          type="email"
-          placeholder="이메일"
-        />
-        <label>Message</label>
-        <textarea
-          name="message"
-          class="contact-field1"
-          placeholder="내용"
-        ></textarea>
-        <input class="contact-btn" value="Send" />
-        <div style="display: none" class="thankyou_message">
-          <h2>
-            <em>Thanks</em> for contacting us! We will get back to you soon!
-          </h2>
+        <div class="form-box">
+          <p>저와 함께 걸어가고자 하시면 메일을 보내주세요!</p>
+
+          <fieldset class="form-contents">
+            <label for="name">Name</label>
+            <input id="name" name="name" placeholder="이름을 작성해주세요!" />
+          </fieldset>
+
+          <fieldset class="form-contents">
+            <label for="email"><em>Your</em> Email Address:</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              value=""
+              required
+              placeholder="your.name@email.com"
+            />
+          </fieldset>
+
+          <button class="form-btn">SEND</button>
         </div>
       </form>
 
@@ -281,11 +277,12 @@
       AOS.init();
     </script>
     <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
     <script
       data-cfasync="false"
       type="text/javascript"
       src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"
     ></script>
-    <script src="js/script.js"></script>
   </body>
 </html>
